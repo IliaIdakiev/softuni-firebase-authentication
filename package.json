@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "server": "ws"
+  },
+  "dependencies": {
+    "local-web-server": "^4.2.1"
+  }
+}
