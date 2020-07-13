@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "server": "ws"
+    "serve": "ws"
   },
   "dependencies": {
+    "handlebars": "^4.7.6",
     "local-web-server": "^4.2.1"
   }
 }

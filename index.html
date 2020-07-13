@@ -6,29 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
 </head>
 
 <body>
-  <div id="app-loader">Loading...</div>
-  <div id="login-container" class="hidden">
-    <form>
-      <div>
-        <label for="email">Email</label>
-        <input type="text" id="email">
-      </div>
-      <div>
-        <label for="password">Password</label>
-        <input type="text" type="password" id="password">
-      </div>
-      <div id="generic-login-error" class="error"></div>
-      <button id="login-btn" type="button">Login</button>
-      <button id="register-btn" type="button">Register</button>
-    </form>
-  </div>
-  <div id="app-container" class="hidden">
-    <div>Hello <span id="user-email"></span>! <a id="logout-btn" href="">Logout</a></div>
-    You are logged
-  </div>
+
+  <div id="app"></div>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
@@ -41,18 +24,21 @@
   <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
-      apiKey: "AIzaSyDUZNWtADHmyCMJbw6Ld48CcyQ7J_Y14J4",
-      authDomain: "test-app-1a5cb.firebaseapp.com",
-      databaseURL: "https://test-app-1a5cb.firebaseio.com",
-      projectId: "test-app-1a5cb",
-      storageBucket: "test-app-1a5cb.appspot.com",
-      messagingSenderId: "398337515683",
-      appId: "1:398337515683:web:9ce35a08a0c8971bb11f16",
-      measurementId: "G-8J6JM20NPH"
+      apiKey: "AIzaSyCZV4rDC3RHOqpGrepQ8VjAM9nYy80LfeY",
+      authDomain: "test-app-4db8c.firebaseapp.com",
+      databaseURL: "https://test-app-4db8c.firebaseio.com",
+      projectId: "test-app-4db8c",
+      storageBucket: "test-app-4db8c.appspot.com",
+      messagingSenderId: "501631363612",
+      appId: "1:501631363612:web:c63e367310f4a6ddc50dd9",
+      measurementId: "G-Q24KJVBBTE"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
+  </script>
+  <script id="loader-template" type="text/x-handlebars-template">
+    <div id="app-loader">Loading...</div>
   </script>
   <script src="./index.js"></script>
 </body>
