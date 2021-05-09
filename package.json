@@ -3,7 +3,7 @@
     "serve": "ws"
   },
   "dependencies": {
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "local-web-server": "^4.2.1"
   }
 }
